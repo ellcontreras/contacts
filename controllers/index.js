@@ -1,3 +1,5 @@
-exports.getIndex = (req, res, next) => {
-    res.render('index', { title: 'Express' });
-}
+exports.getIndex = (req, res) => {
+  res.send({
+    messgae: "hola"
+  });
+};
